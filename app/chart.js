@@ -15,7 +15,7 @@ class Chart {
             top: 20,
             right: 40,
             bottom: 20,
-            left: 40,
+            left: 80,
         };
 
         self.chartCounts = c3.generate({
@@ -23,7 +23,7 @@ class Chart {
             padding: padding,
             data: {
                 columns: [
-                    ['Source', 323, 266, 6, 552, 3, 447]
+                    ['Source', 325, 366, 558, 450]
                 ],
                 type: 'bar',
                 labels: {
@@ -75,7 +75,7 @@ class Chart {
                         left: 0
                     },
                     type: 'category',
-                    categories: ['2012','2013','2014','2015', '2016', '2017', '2018'],
+                    categories: ['2011-2012','2013-2014','2015-2016','2017-2018'],
                     tick: {
                         multiline: false
                     }
