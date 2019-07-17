@@ -13,9 +13,9 @@ class Chart {
 
         var padding = {
             top: 20,
-            right: 40,
-            bottom: 20,
-            left: 80,
+            right: 60,
+            bottom: 0,
+            left: 60,
         };
 
         self.chartCounts = c3.generate({
@@ -23,7 +23,7 @@ class Chart {
             padding: padding,
             data: {
                 columns: [
-                    ['Source', 325, 366, 558, 450]
+                    ['Source', 59, 39, 87, 94]
                 ],
                 type: 'bar',
                 labels: {
@@ -57,7 +57,7 @@ class Chart {
             axis: {
                 rotated: true,
                 y: {
-                    max: 1000,
+                    max: 100,
                     min: 0, 
                     padding: {
                         bottom: 0,
@@ -65,7 +65,7 @@ class Chart {
                     },
                     tick: {
                         count: 4,
-                        values: [0, 250, 500, 750, 1000],
+                        values: [0, 25, 50, 75, 100],
                         format: d3.format(',')
                     }
                 },
